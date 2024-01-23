@@ -6,3 +6,33 @@
 body{
     font-family: 'Manrope', sans-serif;
 }
+
+.pic-1{
+    background-image: linear-gradient(0deg, rgba(22, 22, 26, 0.184) 0%, rgba(17, 17, 23, 0.488) 100%), url(./Images/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    border-radius: 28px;
+}
+.pic-2{
+    background-image: linear-gradient(0deg, rgba(21, 21, 25, 0.586) 0%, rgba(19, 19, 24, 0.20) 100%), url(./Images/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    border-radius: 28px;
+
+}
+.pic-3{
+    background-image: linear-gradient(0deg, rgba(21, 21, 25, 0.649) 0%, rgba(10, 20, 31, 0.442) 100%), url(./Images/4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    border-radius: 28px;
+
+}
+
+
+
