@@ -1,41 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's</title>
-    <!-- tailwind & daisy ui -->    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- customized tailwind -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+    <!-- tailwind & daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customized tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-primary": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="color.css" />
+    <!-- goggle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
       }
-    }
-  </script>
-  <!-- goggle font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-    body{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
-</head>
-<body>
-<header>
-
-    
-</header>    
-<main></main>
-<footer></footer>
-
-</body>
+    </style>
+  </head>
+  <body>
+    <header class="container mx-auto p-4">
+      <nav class="pb-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base rounded-box w-52"
+              >
+                <li><a class="text-btn-primary">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold"
+              >Hockey<span class="text-btn-primary">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a class="text-btn-primary">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa fa-search mr-4 invisible lg:visible"></i>
+            <a class="btn bg-btn-primary text-white text-base lg:text-xl"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="carousel w-full">
+          <!-- slide -1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="w-full">
+              <img src="./Images/1.png" class="w-full mb-4 lg:relative" />
+              <div
+                class="bg-black p-8 rounded-2xl lg:w-1/2 lg:absolute lg:bottom-6 lg:right-5"
+              >
+                <h4 class="text-white font-extrabold text-base lg:text-2xl">
+                  Meet all the heroes from the field
+                </h4>
+                <br />
+                <p class="text-white text-sm lg:text-base">
+                  The thrill of witnessing a hockey hero in action is not
+                  limited to their on-ice performance.
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="w-full">
+                <img src="./Images/1.png" class="w-full mb-4 lg:relative" />
+                <div
+                  class="bg-black p-8 rounded-2xl lg:w-1/2 lg:absolute lg:bottom-6 lg:right-5"
+                >
+                  <h4 class="text-white font-extrabold text-base lg:text-2xl">
+                    Meet all the heroes from the field
+                  </h4>
+                  <br />
+                  <p class="text-white text-sm lg:text-base">
+                    The thrill of witnessing a hockey hero in action is not
+                    limited to their on-ice performance.
+                  </p>
+                </div>
+              </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="w-full">
+                <img src="./Images/1.png" class="w-full mb-4 lg:relative" />
+                <div
+                  class="bg-black p-8 rounded-2xl lg:w-1/2 lg:absolute lg:bottom-6 lg:right-5"
+                >
+                  <h4 class="text-white font-extrabold text-base lg:text-2xl">
+                    Meet all the heroes from the field
+                  </h4>
+                  <br />
+                  <p class="text-white text-sm lg:text-base">
+                    The thrill of witnessing a hockey hero in action is not
+                    limited to their on-ice performance.
+                  </p>
+                </div>
+              </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
